@@ -1,0 +1,93 @@
+
+.navbar{
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+     padding: 15px 30px;
+      position: sticky;
+       top: 0;
+       z-index: 1000;
+    transition: all 0.3s ease;
+}
+.navbar__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+   
+    
+  }
+  
+ 
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Контейнер для поиска */
+  .search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Поле поиска */
+  .search-input {
+    width: 250px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: width 0.3s ease;
+  }
+  
+  .search-input:focus {
+    width: 300px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Сортировка */
+  .sort-select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: white;
+    transition: 0.2s;
+  }
+  
+  .sort-select:hover {
+    background: #ffd5e5;
+  }
+  
+  /* Ссылки */
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+

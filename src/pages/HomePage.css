@@ -1,0 +1,138 @@
+/* Главный контейнер */
+.homepage {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Заголовок */
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff5e78;
+  }
+  
+  /* Сетка товаров */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* Карточка товара */
+  .product-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Изображение */
+  .product-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Название */
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Описание */
+  .product-desc {
+    font-size: 14px;
+    color: #555;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Цена */
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff5e78;
+  }
+  
+  /* Количество */
+  .product-stock {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Кнопка "Подробнее" */
+  .product-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    background: #ff5e78;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  
+  .product-btn:hover {
+    background: #ff3b5a;
+  }
+  
+  /* Загрузка и ошибки */
+  .loading, .error {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5e78;
+    margin-top: 20px;
+    
+    
+  }
+  
+  /* Пагинация */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+  }
+  
+  .pagination li {
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: #f0f0f0;
+    transition: background 0.2s;
+  }
+  
+  .pagination li:hover {
+    background: #ff5e78;
+    color: white;
+  }
+  
+  .pagination .active {
+    background: #ff5e78;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .prev-button, .next-button {
+    font-weight: bold;
+  }
+  
+  .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
